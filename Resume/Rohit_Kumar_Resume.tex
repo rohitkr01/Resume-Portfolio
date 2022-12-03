@@ -1,0 +1,428 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------******* HEADING ********----------
+
+\begin{center}
+    {\Huge \scshape\ ROHIT KUMAR } \\  \vspace{3pt}
+    \small \href{tel:+91 7766864331}{ \raisebox{-0.1\height}\faPhone\ \underline{\textbf{+91 7766864331}} ~} \href{mailto:rohit09619@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{\textbf{rohit09619@gmail.com}}} ~ 
+    \href{https://linkedin.com/in/rohit-kr19}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{\textbf{Linkedin}}}  ~
+    \href{https://github.com/rohitkr01}{\raisebox{-0.2\height}\faGithub\ \underline{\textbf{GitHub}}} ~
+    \hspace{2pt}\href{https://leetcode.com/rohit_kr19}{\raisebox{-0.2\height}\faExternalLink \ \underline{\textbf{Leetcode}}} ~
+    \hspace{4pt}\href{https://auth.geeksforgeeks.org/user/rohitkr01/practice}{\raisebox{-0.2\height}\faExternalLink\ \underline{\textbf{GeeksForGeeks}}} ~
+    
+\end{center}
+
+\vspace{-18pt}
+%--------******** EDUCATION **********-----------
+\section{EDUCATION}
+  % Education in Table form................. 
+    \vspace{-15pt}
+    \setlength{\tabcolsep}{26pt}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Year}  & \textbf{Degree/Certificate}  & \textbf{Institute} & \textbf{CGPA/\%} \\ 
+        \hline
+        2019 - 2023 &  B.Tech - Computer Science   &    HNBGU   &   \textbf{6.68} / 10 \\ 
+        \hline
+        2016 - 2018 &  Intermediate(XII)   & M.S.College & 65 \%    \\ 
+        \hline
+        2016 &  Matriculation(X)   &  High School Noneya   &  71 \%   \\
+        \hline
+        \end{tabular}
+    \end{table}
+  \vspace{-16pt}
+  
+%---------********* TRAINING & COURSEWORK **********----------
+\section{TRAINING \& COURSEWORK}
+    {\href{certificate_link.com} {\textbf{\large{\underline{Full Stack Web Development Trainee At Acciojob  }} } } \hspace{170pt} {\href{https://acciojob.com/}{\textbf{\underline{Acciojob}}} \\  \vspace{3pt}\hspace{15cm}{\textbf{[ July.2022 -- Present ]}}} }
+
+     \vspace{-0.7cm}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Currently under the \textbf{6 Month full-Stack web Development trainee.} }}
+        \resumeItem{\normalsize{I'm learning \textbf{Data structure and algorithms in Java } as well as \textbf{full stack web development.} }}
+    \resumeItemListEnd
+   
+ 
+
+  % ----- Start Writing About the course.....
+  \vspace{6pt}
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item OOPs Concept
+                \item DBMS
+                \item Operating Systems  \item SQL
+                \item Full stack Development(currently)
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+
+\vspace{-12pt}
+
+
+%-----------********** EXPERIENCES ***********--------------
+\section{EXPERIENCE}
+        \vspace{2pt}
+    {\href{https://drive.google.com/file/d/1Xtc4px3jrPeePsLFCAPfNLwlI49aYOwA/view?usp=share_link} {\textbf{\large{\underline{Subject Matter Q\&A Expert in Computer Science  }}{\raisebox{-0.1\height}\faExternalLink} } } \hspace{95pt}{\textbf{\underline{Chegg India Pvt. Ltd.}} \\  \vspace{3pt}\hspace{15cm}{\textbf{[ Sep.2022 -- Present ]}}} }
+
+            \vspace{-0.7cm}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Solving questions of\textbf{ Computer Science Subject} as a subject matter expert \\ at chegg plateform.}}
+                \resumeItem{\normalsize{Solved \textbf{200+ questions} asked by students at the chegg plateform . Where \textbf{thousands of students} ask their questions from all around the world .}}
+            \resumeItemListEnd
+   
+    \vspace{-7pt}
+ 
+%---------********* PROJECTS SECTION *********-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+
+     %------------- Project  -->  {Supply chain management} -------
+        \vspace{3pt} 
+        
+        \resumeSubheading
+        {\href{https://github.com/rohitkr01/Supply-Chain-Management/}{\underline{\textbf{Supply chain management}}{\raisebox{-0.1\height}\faExternalLink }} } {\textbf{[ Nov. 2022 - Nov.2022 ]}} 
+        {\vspace{1pt}{Java, JavaFX,MySQL}}{}
+        %----
+        
+        \vspace{-8pt}
+        \resumeItemListStart
+            \item{Created a dashboard GUI for \textbf{supply chain} management. }
+            \vspace{-4pt}
+            \item{Managed the \textbf{product details, order details} as well as \textbf{user credential} to database  by the writing the query in \textbf{MySQL.} }
+            \vspace{-5pt}
+            \item{Used \textbf{SHA algorithm} and \textbf{MD5} for encryption of the password entered by user .}
+        \resumeItemListEnd
+
+     %-------Project --> {Snake & Ladder Game} --------- 
+         \resumeSubheading
+             {\href{https://github.com/rohitkr01/Snake-Ladder-Game/}{\underline{\textbf{Snake \& Ladder Game}} {\raisebox{-0.1\height}\faExternalLink }}  } {[ Nov. 2022 - Nov.2022 ]} 
+            {\vspace{1pt}{Java, JavaFX}}{} 
+        
+          \vspace{-8pt}
+          \resumeItemListStart
+             \resumeItem{\normalsize{Built a \textbf{GUI for the app} in the \textbf{JavaFX} library  where two players can play the game.}}
+          
+            \resumeItem{\normalsize{I have developed a famous \textbf{Snake \& Ladder Game} in which \textbf{coins moves} forward by a point value in gameboard when roll a dice and got a points value over Dice.}}
+            
+           % \resumeItem{\normalsize{\textbf{TechStack:} Java, javax, swing, JFrame and JPanel}}
+          \resumeItemListEnd 
+
+     %-------Project --> {Encrypt-Decrypt the Message} --------- 
+    
+        \resumeSubheading
+            {\href{https://github.com/rohitkr01/Encryption-Decryption/}{\underline{\textbf{Encrypt-Decrypt the Message}}{\raisebox{-0.1\height}\faExternalLink }} $|$ 
+            %-------
+            {\href{https://endeq.herokuapp.com/}{\underline{\textcolor{accent}{Live}} }} } {[ Aug.2022 ]} 
+            {\vspace{1pt}{HTML, CSS, JavaScript}}{} 
+    
+            \vspace{-8pt}
+        
+          \resumeItemListStart
+            \resumeItem{\normalsize{Created a web application to \textbf{encrypt} a message as well as \textbf{decrypt the encrypted message.}}}
+            \resumeItem{\normalsize{Used \textbf{caesar cipher} as well as \textbf{playfair cipher} for encryption and decryption.}}
+            % \resumeItem{\normalsize{\textbf{TechStack: HTML, CSS, JavaScript .}}}
+            
+        \resumeItemListEnd
+          
+          \vspace{-13pt}
+
+
+    \begin{comment}
+         
+      %------- Project  --> {Snake Game}  ---------- 
+        
+       \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Snake Game}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Java, javax, swing, JFrame and JPanel}}}{[ Nov. 2022 - Nov. 2022 ]}
+          \vspace{-8pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{I have developed a famous \textbf{Snake Game} in snake moves in a given direction,the \textbf{length of snake increases when it eats feed  and  dies on crossing itself.}}}
+            \resumeItem{\normalsize{Built a \textbf{GUI for the app} in the \textbf{JavaFX} framework allowing users to perform simple functions like using arrow keys to move the snake in game}}
+           % \resumeItem{\normalsize{\textbf{TechStack:} Java, javax, swing, JFrame and JPanel}}
+          \resumeItemListEnd 
+          
+         %-------Project --> {Weather App}  --------- 
+        \vspace{-13pt}
+        
+      \resumeProjectHeading
+          {\href{https://github.com/rohitkr01/Weather-App}{\textbf{\large{\underline{Weather App}}} \href{https://github.com/rohitkr01/Weather-App}{\raisebox{-0.1\height}\faExternalLink }}   $|$ {\href{https://weather-mini-app.herokuapp.com/} {\underline{\normalsize{Live here}}}}} {[ Jan. 2022 - Feb. 2022 ]}
+          \vspace{-8pt}
+          \resumeItemListStart
+            \resumeItem{\normalsize{An application which allows user to find out the \textbf{live weather data} in the current location of the device as well as the weather of any city.}}
+            \resumeItem{\normalsize{Used \textbf{OpenWeatherAPI}to collect weather information.}}
+            \resumeItem{\normalsize{\textbf{TechStack: \large{HTML,css, JavaScript,Node.js }}}}
+            
+            % \resumeItem{\textcolor{accent} }
+          \resumeItemListEnd
+         
+    %------------- Project  -->  {Soduko Solver} -------
+    \vspace{3pt} 
+    
+    \resumeSubheading
+    {\href{}{\underline{\textbf{Soduko Solver}}}
+    %-------
+    ~~{\href{link.com}{\underline{{Code}}}} $|$ {\href{https://www.youtube.com/channel/UCtAYFgHoEh6jvezMr9eEgmw}{\underline{Live} }} } {\textbf{[ Apr. 2022 - May.2023 ]}} 
+    {Java, javax, swing, JFrame and JPanel}{}
+    %----
+    
+    \vspace{-4pt}
+    \resumeItemListStart
+        \item{Consists of \textbf{Google auth} and \textbf{JWT}  for user Sign/Login }
+        \vspace{-4pt}
+        \item{The frontend is mainly Made by \textbf{HTML,CSS and JavaScript} and backend is by \textbf{Node and Mysql .}}
+        \vspace{-5pt}
+        \item{I made this project for my youtube channel.}
+    \resumeItemListEnd
+   
+
+     %------****** Project --> {ftyuyuyu}******* ---------  
+     
+      \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Project Name}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Technology Stack Used}}}{MM YYYY}
+          \vspace{-8pt}
+          
+          \resumeItemListStart
+            \resumeItem{\normalsize{About Project \textbf{highlight key points} }}
+            
+          \resumeItemListEnd
+
+          
+    \end{comment}  
+ 
+     
+    \resumeSubHeadingListEnd
+
+
+\begin{comment}
+%---------********* EXPERIENCE/Internships *********-----------
+\section{INTERNSHIP}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Suven Consultants and Technology Pvt. Ltd. \href{https://drive.google.com/file/d/14ZGZs1-t3PhLCZ1lC0JnIog45LY_53wI/view}{\raisebox{-0.1\height}\faExternalLink }}{[ Mar. 2022 -- Apr. 2022 ]} 
+      {\underline{Java Intern}}{Remote}
+      \resumeItemListStart
+        \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+
+\end{comment}
+%-----------******** TECHNICAL SKILLS **********----------
+ \vspace{2pt}
+
+\section{TECHNICAL STRENGTH}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages :}{  \textbf{Java} (Proficient), Python, JavaScript}
+     \hfill
+     \textbf{Web Technologies    }{: HTML, CSS, JavaScript }
+   }
+   \vspace{-5pt}
+   \item{
+     \textbf{Database Management}{: MySQL}
+     \hfill
+     \textbf{Frameworks/Library}{: JavaFX , React.js }
+    }
+    \vspace{-5pt}
+   \item{
+     \textbf{Tools}{: Git, GitHub, Heroku, IntelliJ IDEA, Visual Studio Code}
+     \hfill
+     \textbf{}{}
+   }
+   % \item{
+    % \large\textbf{Coding Profile : }{ \href{https://leetcode.com/rohit_kr19}{Leetcode}  $|$ \href{https://auth.geeksforgeeks.org/user/rohitkr01/practice}{GeeksForGeeks} }
+   % }
+ \resumeSubHeadingListEnd
+
+
+
+ \vspace{-6pt}
+
+
+ %---------******* Acheivement **********--------------
+ 
+\section{ACHIEVEMENTS}
+
+\resumeSubHeadingListStart
+   \item{
+   \begin{description}[font=$\bullet$]
+
+     $\bullet$ \textbf{Leetcode -}{ \textbf{200+} Questions Solved}
+      \hspace{2cm}
+     $\bullet$ \textbf{AccioJob Portal - }{\textbf{300+} Questions Solved }  \\
+     $\bullet$ \textbf{GeeksForGeeks - }{\textbf{110+} Questions Solved }
+      
+  \end{description}
+   }
+   \hspace{0.85cm}$\bullet${ \textbf{5th} rank on \textbf{GFG} in my university}
+\resumeSubHeadingListEnd
+
+ 
+ %-----------******** CERTIFICATIONS *************--------------
+ \begin{comment}
+ 
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{ReactJS \& Redux - Udemy}} \hspace{1.6cm}
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {Command Line in Linux - Coursera}}\\
+
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Python for Data Science - XIE}} \hspace{1cm}
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Microsoft AI Classroom - Microsoft}} \\
+
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{\textbf{5 Stars} in \textbf{C++} \& \textbf{SQL} \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{NodeJS with Express \& MongoDB - Udemy}} \\
+
+\end{comment}
+
+\end{document}

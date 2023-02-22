@@ -66,4 +66,4 @@
 ## Cover Letter
 - If you can create one, great, if not, totally fine - Explain your work ex here, gap if any, overview of 1-2 projects.
 ---
-## By Rohan Dutt
+## By Rohit Kumar
